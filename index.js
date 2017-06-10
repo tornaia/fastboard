@@ -1,0 +1,1 @@
+var app = angular.module('StarterApp', ['ngMaterial']);app.config(function ($sceProvider) {    $sceProvider.enabled(false);});app.controller('AppCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {    $scope.toggleSidenav = function () {        $mdSidenav('left').toggle();    };}]);
